@@ -1,0 +1,140 @@
+:root {
+  --leaf-dark: #1f5c2e;
+  --leaf: #4caf50;
+  --leaf-deep: #0f3d22;
+  --cream: #faf9f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  color: #16281d;
+  background-color: #f3f7f1;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+/* ---------- Landing page ---------- */
+
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Background image for the Paradise Nursery landing page */
+.background-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/paradise-bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.landing_content {
+  flex: 1 1 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 64px 40px;
+  color: var(--cream);
+}
+
+.landing_content h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.1;
+  margin: 0 0 24px;
+  letter-spacing: -0.02em;
+  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+
+.divider {
+  width: 96px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--cream);
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+.landing_content p {
+  font-size: 1.25rem;
+  margin: 0 0 40px;
+  opacity: 0.92;
+  letter-spacing: 0.04em;
+}
+
+.get-started-button,
+.get-started-button1 {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 14px 36px;
+  border-radius: 999px;
+  background-color: var(--leaf);
+  color: #fff;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 10px 24px rgba(15, 61, 34, 0.35);
+}
+
+.get-started-button:hover,
+.get-started-button1:hover {
+  background-color: #3d8f41;
+  transform: translateY(-2px);
+}
+
+.get-started-button1 {
+  background-color: var(--leaf-dark);
+  margin-top: 14px;
+}
+
+.aboutus_container {
+  flex: 1 1 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 40px;
+  background: rgba(7, 23, 15, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.product-list-container {
+  min-height: 100vh;
+  background-color: #f3f7f1;
+}
+
+@media (max-width: 860px) {
+  .background-image {
+    background-attachment: scroll;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}

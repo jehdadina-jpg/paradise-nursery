@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d2b1d"/>
+      <stop offset="55%" stop-color="#1b4a2e"/>
+      <stop offset="100%" stop-color="#2f6b3c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.25" r="0.6">
+      <stop offset="0%" stop-color="#d9f0b8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#d9f0b8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leafA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f9b4f"/>
+      <stop offset="100%" stop-color="#1f5c2e"/>
+    </linearGradient>
+    <linearGradient id="leafB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7cc06a"/>
+      <stop offset="100%" stop-color="#35763c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <g opacity="0.5" fill="url(#leafA)">
+    <path d="M0 1000 C 60 820 180 700 300 660 C 240 790 190 900 180 1000 Z"/>
+    <path d="M1600 1000 C 1540 800 1420 680 1290 640 C 1360 780 1410 900 1420 1000 Z"/>
+  </g>
+
+  <g fill="url(#leafB)" opacity="0.85">
+    <ellipse cx="140" cy="250" rx="150" ry="62" transform="rotate(-28 140 250)"/>
+    <ellipse cx="300" cy="150" rx="130" ry="54" transform="rotate(14 300 150)"/>
+    <ellipse cx="60" cy="470" rx="140" ry="58" transform="rotate(-8 60 470)"/>
+    <ellipse cx="1480" cy="210" rx="150" ry="62" transform="rotate(26 1480 210)"/>
+    <ellipse cx="1330" cy="120" rx="125" ry="52" transform="rotate(-12 1330 120)"/>
+    <ellipse cx="1560" cy="430" rx="140" ry="58" transform="rotate(8 1560 430)"/>
+  </g>
+
+  <g fill="url(#leafA)" opacity="0.9">
+    <path d="M760 1000 C 700 880 700 760 800 690 C 900 760 900 880 840 1000 Z"/>
+    <path d="M560 1000 C 520 900 530 800 610 750 C 680 820 670 920 640 1000 Z"/>
+    <path d="M1000 1000 C 960 900 970 800 1050 750 C 1120 820 1110 920 1080 1000 Z"/>
+  </g>
+
+  <g fill="#9fd98a" opacity="0.28">
+    <circle cx="420" cy="320" r="8"/>
+    <circle cx="1180" cy="380" r="6"/>
+    <circle cx="900" cy="200" r="5"/>
+    <circle cx="640" cy="440" r="7"/>
+    <circle cx="1040" cy="520" r="5"/>
+  </g>
+
+  <rect width="1600" height="1000" fill="#07170f" opacity="0.28"/>
+</svg>

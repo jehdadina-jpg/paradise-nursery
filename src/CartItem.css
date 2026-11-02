@@ -1,0 +1,135 @@
+.cart-container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.cart-total {
+  font-size: 1.9rem;
+  margin: 0;
+  color: #1f5c2e;
+}
+
+.cart-subtitle {
+  margin: 6px 0 28px;
+  color: #5b6b5f;
+  font-size: 0.95rem;
+}
+
+.cart-empty {
+  padding: 40px 0;
+  color: #5b6b5f;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e3ebdf;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.cart-item-image {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f3f7f1;
+  flex-shrink: 0;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #16281d;
+}
+
+.cart-item-cost {
+  margin-top: 4px;
+  font-size: 0.92rem;
+  color: #5b6b5f;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.cart-item-button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.cart-item-button:hover {
+  background-color: #3d8f41;
+}
+
+.cart-item-button-dec {
+  background-color: #1f5c2e;
+}
+
+.cart-item-quantity-value {
+  min-width: 28px;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.cart-item-total {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f5c2e;
+}
+
+.cart-item-delete {
+  margin-top: 14px;
+  padding: 9px 22px;
+  border: none;
+  border-radius: 999px;
+  background-color: #e0533b;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.cart-item-delete:hover {
+  background-color: #c6422c;
+}
+
+.continue_shopping_btn {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+  }
+
+  .cart-item-image {
+    width: 100%;
+    height: 180px;
+  }
+}
